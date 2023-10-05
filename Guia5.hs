@@ -35,7 +35,7 @@ todosIguales (x:xs) | x== head xs && todosIguales xs = True
        
 
 --3
-todosDistintos :: (Eq t) => [t] -> Bool {-la funcion es correcta, pero cuando escribo [1,2,1] me dice que es true, tendria que decir false-}
+todosDistintos :: (Eq t) => [t] -> Bool {-cuando escribo [1,2,1] me dice que es true, tendria que decir false-}
 todosDistintos [] = False
 todosDistintos [x] = True
 todosDistintos (x:xs) | x == head xs = False
